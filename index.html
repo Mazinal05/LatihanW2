@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Muhammad Izaz Naufal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.jpg">
+</head>
+<body>
+    <div class="container">
+        <p id="date-time"></p>
+        <script>
+        function updateDateTime() {
+            const now = new Date();
+            const date = now.toLocaleDateString(); // Formats the date
+            const time = now.toLocaleTimeString(); // Formats the time
+
+            // Display the date and time
+            document.getElementById('date-time').textContent = `Date: ${date} | Time: ${time}`;
+        }
+
+        // Update the time every second (1000 milliseconds)
+        setInterval(updateDateTime, 1000);
+        </script>
+
+        <!-- Foto Profil -->
+        <img src="profile.png" alt="Profile Photo" class="profile-img">
+
+        <!-- Info -->
+        <h2 class="info">
+            Muhammad Izaz Naufal / 102022400306 / Fakultas Rekayasa Industri / S1 Sistem Informasi
+        </h2>
+        <!-- Social Links -->
+        <div class="social-links">
+            <div class="social-item">
+                <a href="https://github.com/Mazinal05/" target="_blank" class="circle">
+                    <i class="fab fa-github"></i>
+                </a>
+                <p>Github</p>
+            </div>
+            <div class="social-item">
+                <a href="https://www.instagram.com/editin.zas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="circle">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <p>Instagram</p>
+            </div>
+            <div class="social-item">
+                <a href="https://www.linkedin.com/in/izaz-naufal-764801312/" target="_blank" class="circle">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <p>LinkedIn</p>
+            </div>
+        </div>
+
+        <!-- HTML Table -->
+        <h3>Contact Information</h3>
+        <table border="1" style="width:100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Muhammad Izaz Naufal</td>
+                    <td>muhammadizaznaufal@student.telkomuniversity.ac.id</td>
+                    <td>+6285248601447</td>
+                    <td>Sukapura</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
